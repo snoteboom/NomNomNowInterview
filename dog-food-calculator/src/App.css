@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  font-family: Lato, sans-serif;
+}
+p{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+body{
+  background: #fbfbfb;
+}
+.bold-txt{
+  font-weight: 600;
+}
+.large-text{
+  font-size: 16px;
+}
+.small-text {
+  font-size: 13px;
+}
+.padding-bottom-small{
+  padding-bottom: 10px;
+}
+.padding-bottom-large{
+  padding-bottom: 10px;
+}
+.blue-text{
+  color:#23ac9b !important;
+  font-weight: 600;
+}
+.yellow-text {
+  color: #e2d16e !important;
+}
+.orange-text{
+  color:#f06324 !important;
+  font-weight: 600;
+}
+
+/*app.js*/
+
+.text-wrapper p{
+  font-size: 16px;
+}
+.App {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.dropdown-container{
+  display: flex;
+  width: 275px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.dropdown-list{
+  max-height: 200px;
+  z-index: 5;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 93%;
+  overflow-y: scroll;
+}
+
+.category{
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.input-field{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  font-family: Lato, sans-serif;
+  padding: 10px;
+  font-size: 1em;
+}
+.form-wrapper{
+  width: 95%;
+  padding-right: 10px;
+}
+.field{
+  font-size: 16px;
+  padding-right: 5px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 20px);
+}
+.down-arrow{
+  width: 20px;
+}
+.placeholder{
+  color: #eee
+}
+.row-text{
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.row-text:hover{
+  background:#eee;
+}
+.list-container{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dog-food-calculator{
+  width: 85%;
+  display: flex;
+  min-width: 800px;
+  margin-bottom: 500px;
+}
+.left-side{
+  width: 70%;
+  max-width: 500px;
+}
+
+.dog-food{
+  position: fixed;
+  right: 3vw;
+  top: 100px;
+  width: 40vw;
+}
+.header{
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+}
+.img-text-wrapper{
+  display: flex;
+}
+.text-wrapper p{
+  margin-bottom: 20px;
+
+}
+.img-text-wrapper p{
+  width: calc(100% - 80px);
+  padding-left: 10px;
+}
+
+.form-field-dropdowns{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  width:100%;
+  flex-direction: column;
+}
+
+.dropdown-title{
+  width: 100%;
+  /*padding-left: 15px;*/
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.form-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*Nutrition Comparison*/
+.nutrition-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.nutrition-list{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.nutrition-list:first-child{
+  border-right: 2px solid #e0e0e0;
+  text-align: end;
+  padding-right: 10px;
+}
+.nutrition-list:first-child p{
+  text-align: end;
+}
+.nutrition-list:nth-child(2){
+  padding-left: 10px;
+  text-align: start;
+}
+.nutrition-list:nth-child(2) .name{
+  text-align: start !important;
+}
+.nutrition-list p{
+  font-size: 22px;
+  color: #818181;
+  height: 80px;
+  font-weight: 300;
+  line-height: 1.1em;
+}
+.nutrition-list label{
+  color: #818181;
+  padding-bottom: 5px;
+  font-size: 14.5px;
+  padding-top: 5px;
+}
+.nutrition-list h1{
+  font-size: 36px;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+  color:#818181;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.nutrition-list .black{
+  color: black
+}
+.compare-wrapper{
+  display: -webkit-flex;
+  display: flex;
+  background: white;
+  padding: 10px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.compare-wrapper p{
+  text-align: center;
+}
+.comparisons{
+  display: flex;
+  background: white;
+  padding: 10px 0px;
+  width: 100%;
+}
+.nutrition-image{
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.hide{
+  opacity:0 ;
+}
+.fa-chevron-down{
+  color: #818181;
+}
+.cta-wrapper h1{
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.3em;
+  margin-bottom: 2vw;
+}
+.cta-button{
+  background-color: #f06324;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  width: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-bar{
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+  #root{
+    margin-top: 80px
+  }
+  .right-side{
+    width: calc(100% - 500px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-field-dropdowns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    flex-direction: row;
+  }
+  .dropdown-container{
+    width: 275px;
+  }
+  .form-wrap{
+    display: flex;
+    flex-direction: row;
+  }
+  .compare-wrapper p {
+    text-align: start;
+  }
+  .nutrition-list p {
+    height: 60px;
+  }
+
+  /*header*/
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #818181;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-logo {
+    height: 40px;
+    margin: 12px;
+  }
+
+  .menu{
+    display: flex;
+    list-style-type:none;
+  }
+  .menu-item{
+    color: #444;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .menu-link{
+    padding: 0px;
+  }
+  .cta-btn-link{
+    margin-right: 10px;
+  }
+  .drop-down p {
+    padding-right: 5px;
+    color: black;
+    padding-right: 5px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .down-arrow{
+    color: #bebebe;
+  }
+  .cta-btn{
+    background-color: #f06324;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    margin: 10px;
+    padding: 0 20px;
+  }
+  .cta-btn a{
+    color: white;
+  }
+  /*HEY*/
+  @font-face {
+    font-family: Oxygen;
+    src: url('https://fonts.googleapis.com/css?family=Oxygen');
+  }
+  body{
+    margin: 0;
+  }
+  nav {
+    position: relative;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav p {
+    color: black !important;
+  }
+  nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  nav a:hover {
+    text-decoration: none;
+    color: #777;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  nav a {
+    color: #000;
+  }
+  .logo a {
+    font-size: 25px;
+  }
+  nav ul {
+    list-style: none;
+  }
+  ul.drop-menu {
+    display: none;
+    list-style: none;
+    min-width: 180px;
+
+  }
+  li > ul.drop-menu li {
+    display: flex;
+    flex: 1;
+  }
+  li:hover > ul.drop-menu {
+    position: absolute;
+    display: flex;
+    top: 100%;
+    width: 100px;
+    flex-direction: column;
+    background: white;
+
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 20px;
+    padding-left: 20px;
+    /*opacity: 0;*/
+    transition: all 0.5s ease-out;
+    /*visibility: hidden;*/
+    z-index: 3;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+  }
+  li > ul.drop-menu a{
+    padding: 10px;
+    border-bottom: none;
+    border-left: 4px solid #fff;
+    color: black;
+  }
+  li > ul.drop-menu a:hover{
+    color:#f06324;
+  }
+  .link {
+    border-left: 4px solid #fff;
+    color: #444;
+    display: block;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dog-food-calculator{
+    flex-direction: column-reverse;
+    min-width: inherit;
+    width: 95%;
+    align-items: center;
+  }
+  .header{
+    font-size: 24px;
+    text-align: start;
+  }
+  .left-side{
+    width: 85%;
+    max-width: inherit;
+  }
+  .dog-food{
+    position: inherit;
+    width: 40vw;
+  }
+  .right-side{
+    display: block;
+    margin: 80px auto 20px auto;
+    padding: 4vw 0;
+    position: static;
+  }
+  .compare-wrapper{
+    width: 100%;
+  }
+}
