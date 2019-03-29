@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.body{
+    background: #fbfbfb;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #818181;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+    height: 40px;
+    margin: 12px;
+}
+
+.menu{
+    display: flex;
+    list-style-type:none;
+}
+.menu-item{
+    color: #444;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.menu-link{
+   padding: 0px;
+}
+.cta-btn-link{
+    margin-right: 10px;
+}
+.drop-down p {
+    padding-right: 5px;
+}
+.down-arrow{
+    color: #bebebe;
+}
+.cta-btn{
+    background-color: #f06324;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    margin: 10px;
+    padding: 0 20px;
+}
+.cta-btn a{
+    color: white;
+}
+/*HEY*/
+@font-face {
+    font-family: Oxygen;
+    src: url('https://fonts.googleapis.com/css?family=Oxygen');
+}
+body{
+    margin: 0;
+}
+nav {
+    position: relative;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #777;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+nav a {
+    color: #000;
+}
+.logo a {
+    font-size: 25px;
+}
+nav ul {
+    list-style: none;
+}
+ul.drop-menu {
+    display: none;
+    list-style: none;
+    min-width: 180px;
+
+}
+li > ul.drop-menu li {
+    display: flex;
+    flex: 1;
+}
+li:hover > ul.drop-menu {
+    position: absolute;
+    display: flex;
+    top: 100%;
+    width: 100px;
+    flex-direction: column;
+    background: white;
+
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 20px;
+    padding-left: 20px;
+    /*opacity: 0;*/
+    transition: all 0.5s ease-out;
+    /*visibility: hidden;*/
+    z-index: 3;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+li > ul.drop-menu a{
+    padding: 10px;
+    border-bottom: none;
+    border-left: 4px solid #fff;
+    color: black;
+}
+li > ul.drop-menu a:hover{
+    color:#f06324;
+}
+.link {
+    border-left: 4px solid #fff;
+    color: #444;
+    display: block;
+    text-decoration: none;
+}
