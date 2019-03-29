@@ -64,6 +64,9 @@ Eng exercises
     but when looking up dog kibble i saw that each brand had different recipes with different nutritional values so i decided to 
     list the brand along with a few different recipes to give the user more useful information.
     
+    I also saw that on the orginal page the user had to click "See the the nutrient comparison below" since they entered the values by hand but once the calculator no longer needed the user to enter the nutrition values on their kibble I realized there was no reason to add this extra user step.
+   
+    
     If you look through the code you will see a few different components and elements(dumb components). The components manage data,
     and the elements just display the data.
 
