@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import DropDown from './Components/DropDown'
-import FormField from './Elements/FormField'
-import NutritionComparison from './Elements/NutritionComparison'
-import CircularImage from './Elements/CircularImage'
-import './App.css';
+import DropDown from './DropDown'
+import FormField from '../Elements/FormField'
+import NutritionComparison from '../Elements/NutritionComparison'
+import CircularImage from '../Elements/CircularImage'
+import '../App.css';
 var vet_image = "https://www.nomnomnow.com/images/home/justin_square.jpg"
 var dog_food_image = "https://www.nomnomnow.com//images/home/chicken_bowl_transparent.png"
 var other_dog_food_data = {
@@ -177,15 +177,18 @@ class App extends Component {
                               <FormField placeholder=""
                                          title={"% protein (min.)"}
                                          selectable={false}
-                                         selected={this.state.selectedDogFood ? this.state.selectedDogFood.protein + "%" : null}/>
+                                         selected={this.state.selectedDogFood ?
+                                             this.state.selectedDogFood.protein + "%" : null}/>
                               <FormField placeholder=""
                                          title={"% fat (min.)"}
                                          selectable={false}
-                                         selected={this.state.selectedDogFood ? this.state.selectedDogFood.fat + "%" : null}/>
+                                         selected={this.state.selectedDogFood ?
+                                             this.state.selectedDogFood.fat + "%" : null}/>
                               <FormField placeholder=""
                                          title={"Caloric density (kcal/kg)"}
                                          selectable={false}
-                                         selected={this.state.selectedDogFood ? this.state.selectedDogFood.calorie : null}/>
+                                         selected={this.state.selectedDogFood ?
+                                             this.state.selectedDogFood.calorie : null}/>
                           </div>
                       </div>
                       {this.state.foodComparison? <NutritionComparison data={this.state.foodComparison}/> : null}
